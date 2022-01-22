@@ -17,6 +17,11 @@
     <div v-show="loading">
       Loading...
     </div>
+    <input
+      v-model="message"
+      placeholder="edit me"
+    >
+    <p>Message is: {{ message }}</p>
   </div>
 </template>
 
@@ -28,7 +33,8 @@ export default {
     num: 10,
     uuid: 'abc1234',
     name: 'text-blue',
-    loading: true
+    loading: true,
+    message: ''
 
   }),
   computed: {
